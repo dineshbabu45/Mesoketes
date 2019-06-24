@@ -14,7 +14,7 @@ public static void main(String[] args) {
 				{
 				char[] ch=m[i].toCharArray();
 				for(int j=0;j<ch.length;j++) {
-					if(ch[j]=='X'&&ch[j-2]=='S'&&ch[j+2]>ms) { //count if condition satisfies
+					if(ch[j]=='X'&&ch[j-2]=='S'&&ch[j+2]>ms) { //count if condition satisfies by taking charcter position
 						count++;
 						ms=ch[j+2];//changing max value
 					}	
@@ -35,6 +35,6 @@ public static void main(String[] args) {
 	System.out.println("No of times attacked:"+count);
 		}
 	else
-		System.out.println("enter from day1"); 
+		System.out.println("enter from day1"); //enter input correctly
 	}
 }
